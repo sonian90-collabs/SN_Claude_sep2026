@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Expense Tracker</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th class="row-num">#</th>
+          <th>A: Amount</th>
+          <th>B: Expense name</th>
+          <th>Balance</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="rows">
+        <!-- Row 1: the starting balance -->
+        <tr class="start-row">
+          <td class="row-num">1</td>
+          <td><input id="start-balance" type="number" value="1000" min="0" step="0.01"></td>
+          <td>Starting balance</td>
+          <td id="start-balance-cell" class="money"></td>
+          <td></td>
+        </tr>
+        <!-- Rows 2, 3, 4... are added by script.js -->
+      </tbody>
+    </table>
+
+    <button id="add-row">+ Add expense</button>
+
+    <p class="summary">
+      Total spent: <strong id="total-spent">0.00</strong>
+      &nbsp;|&nbsp;
+      Remaining balance: <strong id="remaining">1000.00</strong>
+    </p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

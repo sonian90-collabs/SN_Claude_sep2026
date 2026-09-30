@@ -1,0 +1,87 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+  margin: 0;
+  padding: 16px;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  margin-top: 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 6px 8px;
+  text-align: left;
+}
+
+th {
+  background: #eef1f4;
+}
+
+.row-num {
+  width: 32px;
+  color: #888;
+  text-align: center;
+}
+
+.start-row {
+  background: #eaf6ea;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 4px;
+  font: inherit;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.money {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.negative {
+  color: #c0392b;
+}
+
+button {
+  margin-top: 12px;
+  padding: 8px 14px;
+  font: inherit;
+  border: none;
+  border-radius: 4px;
+  background: #2d7be5;
+  color: #fff;
+  cursor: pointer;
+}
+
+button.delete {
+  margin: 0;
+  padding: 2px 8px;
+  background: #e74c3c;
+}
+
+.summary {
+  margin-top: 16px;
+  font-size: 1.1em;
+}
